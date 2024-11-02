@@ -5,15 +5,15 @@ const pro = db.proyectos
 
 exports.create= (req, res, next) =>{
     const a = {
-       titulo: req.params.titulo,
-       descripcion: req.params.descripcion,
-       completada: req.params.completada,
-       fechaCreacion: req.params.fechaCreacion,
-       fechaVencimiento: req.params.fechaVencimiento,
-       prioridad: req.params.prioridad,
-       asignadoA: req.params.asignadoA,
-       categoria: req.params.categoria,
-       pagado: req.params.etiquetas
+       titulo: req.body.titulo,
+       descripcion: req.body.descripcion,
+       completada: req.body.completada,
+       fechaCreacion: req.body.fechaCreacion,
+       fechaVencimiento: req.body.fechaVencimiento,
+       prioridad: req.body.prioridad,
+       asignadoA: req.body.asignadoA,
+       categoria: req.body.categoria,
+       pagado: req.body.etiquetas
     }
 
     pro.create(a)
