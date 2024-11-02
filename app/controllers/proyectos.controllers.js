@@ -3,7 +3,6 @@ const db = require('../config/db.config.js');
 
 const pro = db.proyectos
 
-
 exports.create= (req, res, next) =>{
     const a = {
        titulo: req.params.titulo,

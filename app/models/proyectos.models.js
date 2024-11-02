@@ -14,7 +14,7 @@ module.exports = function(sequelize,Sequelize) {
             allowNull: false
         },
         completada: {
-            type: Sequelize.BOOLEAN,
+            type: Sequelize.STRING(50),
             defaultValue: false
         },
         fechaCreacion: {
@@ -26,19 +26,19 @@ module.exports = function(sequelize,Sequelize) {
             allownull: false
         },
         prioridad:{
-            type: Sequelize.STRING,
+            type: Sequelize.STRING(50),
             allowNull: false
         },
         asignadoA:{
-            type: Sequelize.STRING,
+            type: Sequelize.STRING(50),
             allowNull: false
         },
         categoria:{
-            type: Sequelize.STRING,
+            type: Sequelize.STRING(50),
             allowNull: false
         },
         pagado:{
-            type: Sequelize.BOOLEAN,
+            type: Sequelize.STRING(50),
             defaultValue: false
         }
     });
